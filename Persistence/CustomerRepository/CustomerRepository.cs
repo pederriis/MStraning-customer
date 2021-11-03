@@ -24,12 +24,19 @@ namespace MStraning_customer.Persistence.CustomerRepository
             return customers;
         }
 
+        public CustomerEF GetSingleCustomer(int customerId)
+        {
+            var customers = _Context.Customers.FirstOrDefault(x=>x.Id==customerId);
+
+            return customers;
+        }
+
         public void CreateCustomer(CustomerEF customerEF)
         {
             _Context.Add(customerEF);
 
             _Context.SaveChanges();
-
+            
         }
 
         public void EditCustomer(CustomerEF customerEF, int customerId)

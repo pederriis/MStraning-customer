@@ -31,6 +31,16 @@ namespace MStraning_customer.Controllers
             return CustomerMapper.Map(customersEF);
         }
 
+        [HttpGet]
+        [Route("id")]
+        public Customer GetSingleCustomer(int customerId)
+        {
+            var customersEF = _CostumerRepository.GetSingleCustomer(customerId);
+
+            return CustomerMapper.Map(customersEF);
+        }
+
+
         [HttpPost]
         public void Post(Customer customer)
         {

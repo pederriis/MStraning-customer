@@ -10,6 +10,8 @@ namespace MStraning_customer.Persistence.CustomerRepository
     {
         IEnumerable<CustomerEF> GetAllCustomers();
 
+        CustomerEF GetSingleCustomer(int customerId);
+
         void CreateCustomer(CustomerEF customerEF);
 
         void EditCustomer(CustomerEF customerEF, int customerId);
