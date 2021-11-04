@@ -5,6 +5,7 @@
     <RootNamespace>MStraning_customer</RootNamespace>
     <UserSecretsId>5fcc0eb0-dd5d-4986-8fe6-0ef4048d2aef</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>

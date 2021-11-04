@@ -37,7 +37,7 @@ namespace MStraning_customer
             });
 
             services.AddDbContext<CustomerContext>(options =>
-                    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+                    options.UseSqlServer(Configuration.GetConnectionString("DockerDB")));
 
             //Repositories
             services.AddScoped<ICustomerRepository, CustomerRepository>();
